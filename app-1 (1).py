@@ -1405,17 +1405,17 @@ def page_about():
     st.info(
         "💡 Upload your photos to replace "
         "the emoji avatars! Place photos named: "
-        "sonali.jpg, jagruti.jpg, dharitri.jpg, "
-        "smitarani.jpg, barsha.jpg in app folder.")
+        "sonali.jpeg, jagruti.jpeg, dharitri.jpeg, "
+        "smitarani.jpeg, barsha.jpeg in app folder.")
 
     # Row 1 — first 3 members
     r1cols = st.columns(3)
     for i, col in enumerate(r1cols):
         m = TEAM_MEMBERS[i]
         photo_names = [
-            'sonali.jpg','jagruti.jpg',
-            'dharitri.jpg','smitarani.jpg',
-            'barsha.jpg']
+            'sonali.jpeg','jagruti.jpeg',
+            'dharitri.jpeg','smitarani.jpeg',
+            'barsha.jpeg']
         photo_path = photo_names[i]
         with col:
             if os.path.exists(photo_path):
@@ -1463,9 +1463,9 @@ def page_about():
     for i, col in enumerate([c1,c2]):
         m = TEAM_MEMBERS[i+3]
         photo_names = [
-            'sonali.jpg','jagruti.jpg',
-            'dharitri.jpg','smitarani.jpg',
-            'barsha.jpg']
+            'sonali.jpeg','jagruti.jpeg',
+            'dharitri.jpeg','smitarani.jpeg',
+            'barsha.jpeg']
         photo_path = photo_names[i+3]
         with col:
             if os.path.exists(photo_path):
